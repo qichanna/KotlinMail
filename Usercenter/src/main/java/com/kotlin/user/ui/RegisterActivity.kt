@@ -1,6 +1,7 @@
 package com.kotlin.user.ui
 
 import android.os.Bundle
+import android.view.View
 import com.kotlin.base.ui.activity.BaseMvpActivity
 import com.kotlin.user.R
 import com.kotlin.user.presenter.RegisterPresenter
@@ -10,7 +11,7 @@ import org.jetbrains.anko.toast
 
 class RegisterActivity : BaseMvpActivity<RegisterPresenter>(),RegisterView {
     override fun onRegisterResult(result: Boolean) {
-        toast("注册成功")
+        toast("注册成功 " + result)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +21,7 @@ class RegisterActivity : BaseMvpActivity<RegisterPresenter>(),RegisterView {
         mPresenter.mView = this
 
         mRegisterBtn.setOnClickListener {
-            mPresenter.register("","")
+            mPresenter.register("","","")
         }
     }
 }
