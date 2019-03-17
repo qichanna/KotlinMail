@@ -9,8 +9,9 @@ import javax.inject.Singleton
 @Module
 class ActivityModule(private val activity: Activity) {
 
+    @ActivityScope
     @Provides
     fun providesActivity(): Activity {
-        return activity
+        return this.activity
     }
 }
