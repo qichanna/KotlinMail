@@ -1,6 +1,6 @@
 package com.kotlin.base.data.net
 
-import com.kotlin.base.common.Constant.Companion.SERVER_ADDRESS
+import com.kotlin.base.common.BaseConstant.Companion.SERVER_ADDRESS
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

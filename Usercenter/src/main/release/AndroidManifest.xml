@@ -3,7 +3,8 @@
     package="com.kotlin.user">
 
     <uses-permission android:name="android.permission.INTERNET"/>
-    <application>
+    <application
+        android:name="com.kotlin.base.common.BaseApplication">
         <activity android:name=".ui.RegisterActivity"></activity>
     </application>
 
