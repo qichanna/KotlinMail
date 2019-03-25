@@ -6,13 +6,13 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 25
+    compileSdkVersion 26
 
 
 
     defaultConfig {
         minSdkVersion 17
-        targetSdkVersion 25
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
 
@@ -32,12 +32,12 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation "com.android.support:support-v4:${android_support_version}"
-    implementation "com.android.support:appcompat-v7:${android_support_version}"
-    implementation "com.android.support:recyclerview-v7:${android_support_version}"
-    implementation "com.android.support:design:${android_support_version}"
-    implementation "com.android.support:cardview-v7:${android_support_version}"
-    implementation 'com.android.support:appcompat-v7:25.0.0'
+    api "com.android.support:support-v4:${android_support_version}"
+    api "com.android.support:appcompat-v7:${android_support_version}"
+    api "com.android.support:recyclerview-v7:${android_support_version}"
+    api "com.android.support:design:${android_support_version}"
+    api "com.android.support:cardview-v7:${android_support_version}"
+    api 'com.android.support:appcompat-v7:26.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
@@ -76,22 +76,22 @@ dependencies {
      api 'com.ashokvarma.android:bottom-navigation-bar:2.0.2'
      //Banner
     api 'com.youth.banner:banner:1.4.10'  //最新版本
-    /* //标签
+     //标签
      api 'com.github.shts:TriangleLabelView:1.1.2'
-      //画廊
-     api 'com.github.crosswall:Android-Coverflow:release-v1.0.4'
-     //MulitStateView
-     api "com.github.Kennyc1012:MultiStateView:$multi_state_view_version"
-     //上下拉刷新
-     api 'cn.bingoogolapple:bga-refreshlayout:1.1.7@aar'
-     //Kotlin Bus
-     api 'com.eightbitlab:rxbus:1.0.2'
-     //FlowLayout
-     api 'com.zhy:flowlayout-lib:1.0.3'
-     //ARouter
-     api "com.alibaba:arouter-api:$arouter_api_version"
-     //BadgeView
-     api 'q.rorbin:badgeview:1.1.2'*/
+     //画廊
+    api 'com.github.crosswall:Android-Coverflow:release-v1.0.4'
+    //MulitStateView
+    api "com.github.Kennyc1012:MultiStateView:$multi_state_view_version"
+    //上下拉刷新
+    api 'cn.bingoogolapple:bga-refreshlayout:1.1.7@aar'
+    //Kotlin Bus
+    api 'com.eightbitlab:rxbus:1.0.2'
+    //FlowLayout
+    api 'com.zhy:flowlayout-lib:1.0.3'
+    //ARouter
+    api "com.alibaba:arouter-api:$arouter_api_version"
+    //BadgeView
+    api 'q.rorbin:badgeview:1.1.2'
 }
 repositories {
     mavenCentral()
